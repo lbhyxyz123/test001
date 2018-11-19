@@ -8,7 +8,8 @@ def get_time():
 def app(env):
     # 接收 取出用户信息
     path_info = env["PATH_INFO"]
-    prinit("接收到用户的动态资源请求%s"%path_info)
+    print("接收到用户的动态资源请求%s"%path_info)
+    print("查看是否同步")
     # 数据库 等处理
     if path_info == '/gettime.html':
         # 状态 响应头 响应体
